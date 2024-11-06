@@ -1,0 +1,12 @@
+[package]
+name = "dw_sd"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+lego_spec = { git = "https://github.com/lego-os/lego_spec", features = [
+    "driver",
+    "block",
+], branch = "main" }
+bitflags = { version = "2", default-features = false }
+log = { version = "0.4", default-features = false }
